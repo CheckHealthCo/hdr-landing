@@ -665,3 +665,11 @@ header {
         margin-top: 2rem;
     }
 }
+.txt{
+    text-align: justify;
+    margin: 170px auto;
+}
+.navbar-back{
+    background: #0000ff;
+    color: white;
+}
