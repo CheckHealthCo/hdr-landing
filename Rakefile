@@ -3,7 +3,7 @@
 desc "Build the site"
 task :build do
   puts "Building site"
-  sh "rsync -a src site"
+  sh "rsync -art src/ site/"
 end
 
 desc "Test the build"
