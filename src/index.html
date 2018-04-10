@@ -31,7 +31,12 @@ URI     : https://colorlib.com
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Recaptcha by google -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("hdr-landing-subscription").submit();
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
@@ -100,10 +105,8 @@ URI     : https://colorlib.com
                             <label for="inputemail" class="sr-only">Enter your email address</label>
                             <input id="inputemail" type='email' name='fields[email]' class='form-control form-control-lg' value='' placeholder="Enter your email address">
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6LetWVIUAAAAAL969Czq6mZMV28ZSlzFniT9Hgp-"></div>
                         <div class='form-group'>
-                            <label></label>
-                            <input type='submit' class="btn btn-lg btn-primary mb-2" name='submit-button' value='Get Started' data-drip-attribute="sign-up-button">
+                            <button type='submit' class="btn btn-lg btn-primary mb-2 g-recaptcha" name='submit-button' data-drip-attribute="sign-up-button" data-callback="onSubmit" data-sitekey="6LetWVIUAAAAAL969Czq6mZMV28ZSlzFniT9Hgp-">Get Started</button>
                         </div>
                     </form>
                 </div>
