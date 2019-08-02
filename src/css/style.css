@@ -632,6 +632,25 @@ header {
     color: #ffffff;
 }
 
+/*  PREFERENCES-CONFIRMED
+----------------------*/
+.confirmation-content {
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid #e6ebef;
+    box-shadow: 0 1px 6px 0 rgba(210, 214, 220, 0.3);
+    background: #0000ff;
+    color: #ffffff;
+}
+
+.confirmation-content h2 {
+    color: #ffffff;
+}
+
+.confirmation-content p {
+    color: #ffffff;
+}
+
 
 /*  FOOTER
 ----------------------*/
