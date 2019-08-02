@@ -12,9 +12,9 @@ site: ./site
 # extensionless_mime_type: text/html
 
 max_age:
-   "images/*": 6000
-   "js/*": 6000
-   "*": 300
+  "images/*": 6000
+  "js/*": 6000
+  "*": 300
 
 cache_control:
   "images/*": public, max-age=3600
